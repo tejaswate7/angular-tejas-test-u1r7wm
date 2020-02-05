@@ -10,6 +10,7 @@ shippingCosts;
   constructor(private cartService: CartService) { }
 
   ngOnInit() {
+    this.shippingCosts = this.cartService.getShippingPrices();
   }
 
 }
